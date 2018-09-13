@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0087DE3A9F2F6AC28A6595EF1A8F9F81 /* Pods-TapTap-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B559AF489881BA320A7E24F5D23B6BDB /* Pods-TapTap-iOSTests-dummy.m */; };
+		0624B2EF53F9B3BCD21C97CAD7DF32E4 /* DefaultsSerializable+BuiltIns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E29BD12DAC4B739B8A952D14D6E17 /* DefaultsSerializable+BuiltIns.swift */; };
+		12F10C1CE68C0306B248FBFF62096C06 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36D9086A3187F4355C0D7991444CF3F /* Defaults.swift */; };
+		1EF556EEACB8CCC639A500B0B039A5BC /* DefaultsSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9709068F8D3BBA2B0C274ADE11B68F /* DefaultsSerializable.swift */; };
+		213181D9B13BECDFEDFCEAD244F3A8A4 /* Pods-TapTap-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FFBB50041AD5BC72121A65EAC0630F /* Pods-TapTap-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24293D1BD41CD4A46B65CCDFAF1FF2AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		31C57C9C3C15C2419C723BD7BD5DDEF7 /* SwiftyUserDefaults-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D826539FC2491B9906F4E65B65DD873 /* SwiftyUserDefaults-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2B3B97B7E9E5015741B841D059F54A /* SwiftyUserDefaults-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF43DDBD68C590C1D916A7048074A96 /* SwiftyUserDefaults-dummy.m */; };
+		4389558F6763503DF25C563501E5FDB0 /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DC55EEDABC79FAC3118E78067D9845 /* DefaultsKeys.swift */; };
+		79DE54323C1AD38DA6BCE5772A96FB10 /* Pods-TapTap-iOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 377AC1530F3CA0DB95BA2F9AC63F40D0 /* Pods-TapTap-iOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F4AB8373A019361E902D43445E8401A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		97B2CA3B87D617F75E70CFADCC7D1174 /* Pods-TapTap-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65957C82A399772FDA5C26F2D0F58A8C /* Pods-TapTap-iOS-dummy.m */; };
+		984844D5638B345C0461E16A9FEF5C62 /* Pods-TapTap-iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD10B65BBFF1DBB7998EA765A7819BA1 /* Pods-TapTap-iOSUITests-dummy.m */; };
+		AC6B09B882AB9E4F69E01941625018C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C8E6D37ACD515F329331D2C80D3861E3 /* Defaults+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAE6C0368B206FD8CA863490BBBB66 /* Defaults+Subscripts.swift */; };
+		E45C4DF5A94AD502976A09C9BE0650B0 /* Pods-TapTap-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A411335306000C75FAA4FB39A214BC57 /* Pods-TapTap-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA31025856E67C8531CB7DD165FA2BFB /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4660D96975057669C9022F748532D /* OptionalType.swift */; };
+		EF7393E0DF2203786000EE045ADA5C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2804F9644E837C804F8E501ED496C96C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD66E409FB6C4F90D864DFA9ABFEE95;
+			remoteInfo = "Pods-TapTap-iOS";
+		};
+		2BAC2AF40ACEA1C6B10A095579072CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD66E409FB6C4F90D864DFA9ABFEE95;
+			remoteInfo = "Pods-TapTap-iOS";
+		};
+		496ECA2B0E3842B9EE5A80AEF01686D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96EF8167774991CEBF4D0B1755D6C31B;
+			remoteInfo = SwiftyUserDefaults;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0095AAE73A7E902FA496C9D9D5E7BE4D /* Pods-TapTap-iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TapTap-iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C96EC72CC7ACF769ECAECD09942D007 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9709068F8D3BBA2B0C274ADE11B68F /* DefaultsSerializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultsSerializable.swift; path = Sources/DefaultsSerializable.swift; sourceTree = "<group>"; };
+		1444E071AD558EE83C68BDF7F40D391B /* Pods-TapTap-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TapTap-iOS.modulemap"; sourceTree = "<group>"; };
+		17FFBB50041AD5BC72121A65EAC0630F /* Pods-TapTap-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TapTap-iOSTests-umbrella.h"; sourceTree = "<group>"; };
+		1C9090B4AFF7B5F480B9E9D3811A78A8 /* SwiftyUserDefaults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyUserDefaults.xcconfig; sourceTree = "<group>"; };
+		2F8E29BD12DAC4B739B8A952D14D6E17 /* DefaultsSerializable+BuiltIns.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DefaultsSerializable+BuiltIns.swift"; path = "Sources/DefaultsSerializable+BuiltIns.swift"; sourceTree = "<group>"; };
+		377AC1530F3CA0DB95BA2F9AC63F40D0 /* Pods-TapTap-iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TapTap-iOSUITests-umbrella.h"; sourceTree = "<group>"; };
+		3D43279147F6DFCD0C036F1D81E201DC /* Pods-TapTap-iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		3D50759D6EF8D8BC57E523CDF7E836B0 /* Pods-TapTap-iOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapTap-iOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D826539FC2491B9906F4E65B65DD873 /* SwiftyUserDefaults-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUserDefaults-umbrella.h"; sourceTree = "<group>"; };
+		3FBCA26CFFE3AC5E2D57F3DD427DF8DA /* Pods-TapTap-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapTap-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		460970BF8A67AB6541481AB881C7D3B1 /* Pods-TapTap-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapTap-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4666EB9D1FF5995767C3FD8E5E02B2F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50210631823A40FDCA4D6F0FF0DEF8A5 /* Pods-TapTap-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapTap-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50A4660D96975057669C9022F748532D /* OptionalType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalType.swift; path = Sources/OptionalType.swift; sourceTree = "<group>"; };
+		5B0044F2A30738E8E6624E34216A1B1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1338AEF594FBE483ADDEFBFF0F0866 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65092D263D432393F351B33C3B92F7D4 /* Pods-TapTap-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapTap-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		65957C82A399772FDA5C26F2D0F58A8C /* Pods-TapTap-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TapTap-iOS-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7885E508108AE62E4BD74353E56AC588 /* SwiftyUserDefaults.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyUserDefaults.modulemap; sourceTree = "<group>"; };
+		7A3994758AA2854EA258DD6AE65B16C2 /* Pods-TapTap-iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TapTap-iOSUITests.modulemap"; sourceTree = "<group>"; };
+		7BCBBE7270AFE24BE808A4EDBD52D415 /* Pods-TapTap-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOS-resources.sh"; sourceTree = "<group>"; };
+		7CF43DDBD68C590C1D916A7048074A96 /* SwiftyUserDefaults-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyUserDefaults-dummy.m"; sourceTree = "<group>"; };
+		819DBBE2BE78CBE7E2050224DB60C85E /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyUserDefaults.framework; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8832AC5A7FB4EB17A9AABC17C5FD96CB /* Pods_TapTap_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TapTap_iOSUITests.framework; path = "Pods-TapTap-iOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B09268A35617EF6A975D93A186D5DEE /* Pods_TapTap_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TapTap_iOSTests.framework; path = "Pods-TapTap-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F5C03C88C27000D53D8E06B7704EE0B /* Pods-TapTap-iOSUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOSUITests-resources.sh"; sourceTree = "<group>"; };
+		A411335306000C75FAA4FB39A214BC57 /* Pods-TapTap-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TapTap-iOS-umbrella.h"; sourceTree = "<group>"; };
+		AB334C046F60285C19FCE2679DE07E3B /* Pods_TapTap_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TapTap_iOS.framework; path = "Pods-TapTap-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC635C830B566B8A8779B5653FAC7E06 /* Pods-TapTap-iOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOSTests-resources.sh"; sourceTree = "<group>"; };
+		B559AF489881BA320A7E24F5D23B6BDB /* Pods-TapTap-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TapTap-iOSTests-dummy.m"; sourceTree = "<group>"; };
+		B5FAB8B0797B47578995BD2C760B0B65 /* Pods-TapTap-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapTap-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B7AEE2FD63DA6A20452DF821B5B7B642 /* Pods-TapTap-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TapTap-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B9941C2C83F60000A209192FADCA7F0E /* Pods-TapTap-iOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOSUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BEE59FEDF593C31F335550AB5838DB52 /* Pods-TapTap-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		CB815EFB70ABC849A13E6C3D8563D8BF /* Pods-TapTap-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapTap-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD10B65BBFF1DBB7998EA765A7819BA1 /* Pods-TapTap-iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TapTap-iOSUITests-dummy.m"; sourceTree = "<group>"; };
+		CDB6A35BBE2857397BCD06DE665B095E /* SwiftyUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUserDefaults-prefix.pch"; sourceTree = "<group>"; };
+		D36D9086A3187F4355C0D7991444CF3F /* Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defaults.swift; path = Sources/Defaults.swift; sourceTree = "<group>"; };
+		D5DC55EEDABC79FAC3118E78067D9845 /* DefaultsKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultsKeys.swift; path = Sources/DefaultsKeys.swift; sourceTree = "<group>"; };
+		DF967095055CBC66772A38BECFA75906 /* Pods-TapTap-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapTap-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0CBA4696590CAF6326492BD893736E1 /* Pods-TapTap-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TapTap-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2CAE6C0368B206FD8CA863490BBBB66 /* Defaults+Subscripts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Defaults+Subscripts.swift"; path = "Sources/Defaults+Subscripts.swift"; sourceTree = "<group>"; };
+		F6D06F72DECC14F6B2393C5E1B4DCC8D /* Pods-TapTap-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TapTap-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8117C88FF85BCF65F61A22D52F3876D /* Pods-TapTap-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TapTap-iOSTests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55D4B6B5586D421852D88AEA00B2B437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4AB8373A019361E902D43445E8401A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C47FFACAAA7516AD64D281C56AC1DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6B09B882AB9E4F69E01941625018C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D9E05A3A73BCB13C266CDD96D03182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24293D1BD41CD4A46B65CCDFAF1FF2AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC0FF8720BB63BA39C0242886111475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7393E0DF2203786000EE045ADA5C92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C8279B426D5A257945C974FD076167D /* Pods-TapTap-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C1338AEF594FBE483ADDEFBFF0F0866 /* Info.plist */,
+				F8117C88FF85BCF65F61A22D52F3876D /* Pods-TapTap-iOSTests.modulemap */,
+				F6D06F72DECC14F6B2393C5E1B4DCC8D /* Pods-TapTap-iOSTests-acknowledgements.markdown */,
+				B5FAB8B0797B47578995BD2C760B0B65 /* Pods-TapTap-iOSTests-acknowledgements.plist */,
+				B559AF489881BA320A7E24F5D23B6BDB /* Pods-TapTap-iOSTests-dummy.m */,
+				3D43279147F6DFCD0C036F1D81E201DC /* Pods-TapTap-iOSTests-frameworks.sh */,
+				AC635C830B566B8A8779B5653FAC7E06 /* Pods-TapTap-iOSTests-resources.sh */,
+				17FFBB50041AD5BC72121A65EAC0630F /* Pods-TapTap-iOSTests-umbrella.h */,
+				E0CBA4696590CAF6326492BD893736E1 /* Pods-TapTap-iOSTests.debug.xcconfig */,
+				DF967095055CBC66772A38BECFA75906 /* Pods-TapTap-iOSTests.release.xcconfig */,
+			);
+			name = "Pods-TapTap-iOSTests";
+			path = "Target Support Files/Pods-TapTap-iOSTests";
+			sourceTree = "<group>";
+		};
+		68CFB069814C088D9DB688C64F0875FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB334C046F60285C19FCE2679DE07E3B /* Pods_TapTap_iOS.framework */,
+				8B09268A35617EF6A975D93A186D5DEE /* Pods_TapTap_iOSTests.framework */,
+				8832AC5A7FB4EB17A9AABC17C5FD96CB /* Pods_TapTap_iOSUITests.framework */,
+				819DBBE2BE78CBE7E2050224DB60C85E /* SwiftyUserDefaults.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BA3FA1EDC76E89689D0AB438631CA112 /* Pods */,
+				68CFB069814C088D9DB688C64F0875FD /* Products */,
+				CF670C71E079D497ECACA480393A69E5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		915B0F703DBC29401DEFE31D41AE9E06 /* Pods-TapTap-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C96EC72CC7ACF769ECAECD09942D007 /* Info.plist */,
+				7A3994758AA2854EA258DD6AE65B16C2 /* Pods-TapTap-iOSUITests.modulemap */,
+				0095AAE73A7E902FA496C9D9D5E7BE4D /* Pods-TapTap-iOSUITests-acknowledgements.markdown */,
+				3D50759D6EF8D8BC57E523CDF7E836B0 /* Pods-TapTap-iOSUITests-acknowledgements.plist */,
+				CD10B65BBFF1DBB7998EA765A7819BA1 /* Pods-TapTap-iOSUITests-dummy.m */,
+				B9941C2C83F60000A209192FADCA7F0E /* Pods-TapTap-iOSUITests-frameworks.sh */,
+				9F5C03C88C27000D53D8E06B7704EE0B /* Pods-TapTap-iOSUITests-resources.sh */,
+				377AC1530F3CA0DB95BA2F9AC63F40D0 /* Pods-TapTap-iOSUITests-umbrella.h */,
+				50210631823A40FDCA4D6F0FF0DEF8A5 /* Pods-TapTap-iOSUITests.debug.xcconfig */,
+				3FBCA26CFFE3AC5E2D57F3DD427DF8DA /* Pods-TapTap-iOSUITests.release.xcconfig */,
+			);
+			name = "Pods-TapTap-iOSUITests";
+			path = "Target Support Files/Pods-TapTap-iOSUITests";
+			sourceTree = "<group>";
+		};
+		93412E9AF8918B4791ECE2683E3D4BF0 /* Pods-TapTap-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4666EB9D1FF5995767C3FD8E5E02B2F7 /* Info.plist */,
+				1444E071AD558EE83C68BDF7F40D391B /* Pods-TapTap-iOS.modulemap */,
+				B7AEE2FD63DA6A20452DF821B5B7B642 /* Pods-TapTap-iOS-acknowledgements.markdown */,
+				CB815EFB70ABC849A13E6C3D8563D8BF /* Pods-TapTap-iOS-acknowledgements.plist */,
+				65957C82A399772FDA5C26F2D0F58A8C /* Pods-TapTap-iOS-dummy.m */,
+				BEE59FEDF593C31F335550AB5838DB52 /* Pods-TapTap-iOS-frameworks.sh */,
+				7BCBBE7270AFE24BE808A4EDBD52D415 /* Pods-TapTap-iOS-resources.sh */,
+				A411335306000C75FAA4FB39A214BC57 /* Pods-TapTap-iOS-umbrella.h */,
+				460970BF8A67AB6541481AB881C7D3B1 /* Pods-TapTap-iOS.debug.xcconfig */,
+				65092D263D432393F351B33C3B92F7D4 /* Pods-TapTap-iOS.release.xcconfig */,
+			);
+			name = "Pods-TapTap-iOS";
+			path = "Target Support Files/Pods-TapTap-iOS";
+			sourceTree = "<group>";
+		};
+		B796E1369C596E6F51CAA8E8CD9CDE6F /* SwiftyUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				D36D9086A3187F4355C0D7991444CF3F /* Defaults.swift */,
+				E2CAE6C0368B206FD8CA863490BBBB66 /* Defaults+Subscripts.swift */,
+				D5DC55EEDABC79FAC3118E78067D9845 /* DefaultsKeys.swift */,
+				0E9709068F8D3BBA2B0C274ADE11B68F /* DefaultsSerializable.swift */,
+				2F8E29BD12DAC4B739B8A952D14D6E17 /* DefaultsSerializable+BuiltIns.swift */,
+				50A4660D96975057669C9022F748532D /* OptionalType.swift */,
+				C690689B4354976F8E7EC91DBBD654DE /* Support Files */,
+			);
+			name = SwiftyUserDefaults;
+			path = SwiftyUserDefaults;
+			sourceTree = "<group>";
+		};
+		BA3FA1EDC76E89689D0AB438631CA112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B796E1369C596E6F51CAA8E8CD9CDE6F /* SwiftyUserDefaults */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C690689B4354976F8E7EC91DBBD654DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B0044F2A30738E8E6624E34216A1B1B /* Info.plist */,
+				7885E508108AE62E4BD74353E56AC588 /* SwiftyUserDefaults.modulemap */,
+				1C9090B4AFF7B5F480B9E9D3811A78A8 /* SwiftyUserDefaults.xcconfig */,
+				7CF43DDBD68C590C1D916A7048074A96 /* SwiftyUserDefaults-dummy.m */,
+				CDB6A35BBE2857397BCD06DE665B095E /* SwiftyUserDefaults-prefix.pch */,
+				3D826539FC2491B9906F4E65B65DD873 /* SwiftyUserDefaults-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyUserDefaults";
+			sourceTree = "<group>";
+		};
+		CF670C71E079D497ECACA480393A69E5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93412E9AF8918B4791ECE2683E3D4BF0 /* Pods-TapTap-iOS */,
+				5C8279B426D5A257945C974FD076167D /* Pods-TapTap-iOSTests */,
+				915B0F703DBC29401DEFE31D41AE9E06 /* Pods-TapTap-iOSUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05ECCFA2A22AC714B50ECD7DBCB8020F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213181D9B13BECDFEDFCEAD244F3A8A4 /* Pods-TapTap-iOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1787FA38862B94500AA1F68DCA43BDC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C57C9C3C15C2419C723BD7BD5DDEF7 /* SwiftyUserDefaults-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C27B7EDA7B50E5228106589F58710BEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45C4DF5A94AD502976A09C9BE0650B0 /* Pods-TapTap-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F6E834E32ECFEDDA0B317E62E0846 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DE54323C1AD38DA6BCE5772A96FB10 /* Pods-TapTap-iOSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5843C9DA5B6262B3D04D08E170E111AB /* Pods-TapTap-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3DFA1A5BDD354FD4F62AE4A950AE34 /* Build configuration list for PBXNativeTarget "Pods-TapTap-iOSUITests" */;
+			buildPhases = (
+				BF05C8FBA5C2E99F0BA8951D789A5AD7 /* Sources */,
+				55D4B6B5586D421852D88AEA00B2B437 /* Frameworks */,
+				E99F6E834E32ECFEDDA0B317E62E0846 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0475C9CAD621F0813B80DACBF3498C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-TapTap-iOSUITests";
+			productName = "Pods-TapTap-iOSUITests";
+			productReference = 8832AC5A7FB4EB17A9AABC17C5FD96CB /* Pods_TapTap_iOSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DD66E409FB6C4F90D864DFA9ABFEE95 /* Pods-TapTap-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1862EA3286BAEDB8F8BDB1ABE5F4568 /* Build configuration list for PBXNativeTarget "Pods-TapTap-iOS" */;
+			buildPhases = (
+				54B57DE852A042AEA2554A5DE43F139A /* Sources */,
+				BEC0FF8720BB63BA39C0242886111475 /* Frameworks */,
+				C27B7EDA7B50E5228106589F58710BEE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DDFE91E77C45B9E75D8DD2CAF6B35FA /* PBXTargetDependency */,
+			);
+			name = "Pods-TapTap-iOS";
+			productName = "Pods-TapTap-iOS";
+			productReference = AB334C046F60285C19FCE2679DE07E3B /* Pods_TapTap_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96EF8167774991CEBF4D0B1755D6C31B /* SwiftyUserDefaults */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B8B2C7335997C7F5763B92B47E08CAA /* Build configuration list for PBXNativeTarget "SwiftyUserDefaults" */;
+			buildPhases = (
+				82F57BC97B75BF86691DEA8946B9CE00 /* Sources */,
+				86D9E05A3A73BCB13C266CDD96D03182 /* Frameworks */,
+				1787FA38862B94500AA1F68DCA43BDC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyUserDefaults;
+			productName = SwiftyUserDefaults;
+			productReference = 819DBBE2BE78CBE7E2050224DB60C85E /* SwiftyUserDefaults.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A550D7BA6E2BCD9BE854BA88D64E9AD /* Pods-TapTap-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A7C8AF60254D65C0DCD5D0A618BFCE /* Build configuration list for PBXNativeTarget "Pods-TapTap-iOSTests" */;
+			buildPhases = (
+				C14ED853AE125803C51E05EE6C848131 /* Sources */,
+				6C47FFACAAA7516AD64D281C56AC1DEC /* Frameworks */,
+				05ECCFA2A22AC714B50ECD7DBCB8020F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82912C36DADED41659AF28D55F486222 /* PBXTargetDependency */,
+			);
+			name = "Pods-TapTap-iOSTests";
+			productName = "Pods-TapTap-iOSTests";
+			productReference = 8B09268A35617EF6A975D93A186D5DEE /* Pods_TapTap_iOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 68CFB069814C088D9DB688C64F0875FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD66E409FB6C4F90D864DFA9ABFEE95 /* Pods-TapTap-iOS */,
+				9A550D7BA6E2BCD9BE854BA88D64E9AD /* Pods-TapTap-iOSTests */,
+				5843C9DA5B6262B3D04D08E170E111AB /* Pods-TapTap-iOSUITests */,
+				96EF8167774991CEBF4D0B1755D6C31B /* SwiftyUserDefaults */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54B57DE852A042AEA2554A5DE43F139A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B2CA3B87D617F75E70CFADCC7D1174 /* Pods-TapTap-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F57BC97B75BF86691DEA8946B9CE00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E6D37ACD515F329331D2C80D3861E3 /* Defaults+Subscripts.swift in Sources */,
+				12F10C1CE68C0306B248FBFF62096C06 /* Defaults.swift in Sources */,
+				4389558F6763503DF25C563501E5FDB0 /* DefaultsKeys.swift in Sources */,
+				0624B2EF53F9B3BCD21C97CAD7DF32E4 /* DefaultsSerializable+BuiltIns.swift in Sources */,
+				1EF556EEACB8CCC639A500B0B039A5BC /* DefaultsSerializable.swift in Sources */,
+				EA31025856E67C8531CB7DD165FA2BFB /* OptionalType.swift in Sources */,
+				3E2B3B97B7E9E5015741B841D059F54A /* SwiftyUserDefaults-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF05C8FBA5C2E99F0BA8951D789A5AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984844D5638B345C0461E16A9FEF5C62 /* Pods-TapTap-iOSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14ED853AE125803C51E05EE6C848131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0087DE3A9F2F6AC28A6595EF1A8F9F81 /* Pods-TapTap-iOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DDFE91E77C45B9E75D8DD2CAF6B35FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyUserDefaults;
+			target = 96EF8167774991CEBF4D0B1755D6C31B /* SwiftyUserDefaults */;
+			targetProxy = 496ECA2B0E3842B9EE5A80AEF01686D0 /* PBXContainerItemProxy */;
+		};
+		82912C36DADED41659AF28D55F486222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TapTap-iOS";
+			target = 8DD66E409FB6C4F90D864DFA9ABFEE95 /* Pods-TapTap-iOS */;
+			targetProxy = 2804F9644E837C804F8E501ED496C96C /* PBXContainerItemProxy */;
+		};
+		C0475C9CAD621F0813B80DACBF3498C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TapTap-iOS";
+			target = 8DD66E409FB6C4F90D864DFA9ABFEE95 /* Pods-TapTap-iOS */;
+			targetProxy = 2BAC2AF40ACEA1C6B10A095579072CAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156BE102886E8DCFB0D49740FCB0338B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF967095055CBC66772A38BECFA75906 /* Pods-TapTap-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapTap-iOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapTap-iOSTests/Pods-TapTap-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B11E2FDA1CC5CBCCF6841B00D92D3E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460970BF8A67AB6541481AB881C7D3B1 /* Pods-TapTap-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapTap-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapTap-iOS/Pods-TapTap-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E3C0B3B0085B06383F204192107FD04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65092D263D432393F351B33C3B92F7D4 /* Pods-TapTap-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapTap-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapTap-iOS/Pods-TapTap-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D3C05A0A77D6242298CA5ABA2948A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9090B4AFF7B5F480B9E9D3811A78A8 /* SwiftyUserDefaults.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyUserDefaults/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyUserDefaults;
+				PRODUCT_NAME = SwiftyUserDefaults;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A8415734A588C9C57950BD22DE764B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50210631823A40FDCA4D6F0FF0DEF8A5 /* Pods-TapTap-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapTap-iOSUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapTap-iOSUITests/Pods-TapTap-iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		70ECF5F7BC7C4E1104D58DC4C4727A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FBCA26CFFE3AC5E2D57F3DD427DF8DA /* Pods-TapTap-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapTap-iOSUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapTap-iOSUITests/Pods-TapTap-iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BE0FE63C83F7F5CF9552F21DC1A65B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0CBA4696590CAF6326492BD893736E1 /* Pods-TapTap-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TapTap-iOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TapTap-iOSTests/Pods-TapTap-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE9062ABCF13CEDD61DD731F04C73163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9090B4AFF7B5F480B9E9D3811A78A8 /* SwiftyUserDefaults.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyUserDefaults/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyUserDefaults;
+				PRODUCT_NAME = SwiftyUserDefaults;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3DFA1A5BDD354FD4F62AE4A950AE34 /* Build configuration list for PBXNativeTarget "Pods-TapTap-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8415734A588C9C57950BD22DE764B4 /* Debug */,
+				70ECF5F7BC7C4E1104D58DC4C4727A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B8B2C7335997C7F5763B92B47E08CAA /* Build configuration list for PBXNativeTarget "SwiftyUserDefaults" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9062ABCF13CEDD61DD731F04C73163 /* Debug */,
+				2D3C05A0A77D6242298CA5ABA2948A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7A7C8AF60254D65C0DCD5D0A618BFCE /* Build configuration list for PBXNativeTarget "Pods-TapTap-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE0FE63C83F7F5CF9552F21DC1A65B6C /* Debug */,
+				156BE102886E8DCFB0D49740FCB0338B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1862EA3286BAEDB8F8BDB1ABE5F4568 /* Build configuration list for PBXNativeTarget "Pods-TapTap-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B11E2FDA1CC5CBCCF6841B00D92D3E2 /* Debug */,
+				1E3C0B3B0085B06383F204192107FD04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
