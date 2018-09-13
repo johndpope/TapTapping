@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     
@@ -25,6 +26,10 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        scoreLabel.text = ""
+        rLabel.text = "0"
+        lLabel.text = "0"
+        
         leftNum = Int(arc4random_uniform(50))
         rightNum = Int(arc4random_uniform(50))
         showCount = Double(arc4random_uniform(UInt32(5.00)))
@@ -40,17 +45,19 @@ class GameViewController: UIViewController {
     }
     
     /*
-     スタートボタン押下で、ラベルがラップされるまでのカウント開始
+     ラベルを表示するまでのランダムな間隔を設定、ラベルに表示する数字も用意
      
-     マイランキングとタイトルボタンを消す
+     スタートボタン押下で、タイマースタート。　設定した間隔でラベルに数字を表示、マイランキングとタイトルボタンを消す
      
-     カウントがラベルに表示されたらカウント開始
+     数字がラベルに表示されたらカウント開始
      
      ラベルがタップされたらタイムを表示
      */
     
     
     @IBAction func oStartButton(_ sender: Any) {
+        startSound.currentTime = 0
+        startSound.play()
     }
     
     @IBAction func oRunkingButton(_ sender: Any) {

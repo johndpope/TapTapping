@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
+
+var startSound: AVAudioPlayer!
+var stopSound: AVAudioPlayer!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //ボタンの音をバッファに読み込んでおく
+        let stpSound = Bundle.main.url(forResource: "digital", withExtension: "mp3")!
+        let strSound = Bundle.main.url(forResource: "pico", withExtension: "mp3")!
+        do {
+            try startSound = AVAudioPlayer(contentsOf: strSound)
+            try stopSound = AVAudioPlayer(contentsOf: stpSound)
+            startSound.stop()
+            stopSound.stop()
+            startSound.prepareToPlay()
+            stopSound.prepareToPlay()
+        } catch {
+            print(error)
+        }
         return true
     }
 

@@ -10,6 +10,8 @@
 		662AB9278C1FC4121D63D4A1 /* Pods_TapTap_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268AA3811DA1841713F52315 /* Pods_TapTap_iOSUITests.framework */; };
 		75A60CE755CF7067C4CF9264 /* Pods_TapTap_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDFD4634D346F26B94729D5 /* Pods_TapTap_iOS.framework */; };
 		B7A8B7D7C17660352CEDCE3F /* Pods_TapTap_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCCC47AACE9EB9C58FF1AF3 /* Pods_TapTap_iOSTests.framework */; };
+		C2282B95214B0EAE0028E16C /* digital.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2282B94214B0EAE0028E16C /* digital.mp3 */; };
+		C2282B97214B0EB80028E16C /* pico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2282B96214B0EB80028E16C /* pico.mp3 */; };
 		C232DB74212CC24500A52D8F /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232DB73212CC24500A52D8F /* model.swift */; };
 		C2F373BA21200CC200478AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373B921200CC200478AD0 /* AppDelegate.swift */; };
 		C2F373BF21200CC200478AD0 /* Title.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F373BD21200CC200478AD0 /* Title.storyboard */; };
@@ -52,6 +54,8 @@
 		26B42EB141117D3D0E76ED1A /* Pods-TapTap-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapTap-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapTap-iOSUITests/Pods-TapTap-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		602591ED74C2A1055303F007 /* Pods-TapTap-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapTap-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapTap-iOSTests/Pods-TapTap-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		82B48F41DC1DD05DB96783D3 /* Pods-TapTap-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapTap-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TapTap-iOSTests/Pods-TapTap-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2282B94214B0EAE0028E16C /* digital.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = digital.mp3; path = ../../../../Downloads/digital.mp3; sourceTree = "<group>"; };
+		C2282B96214B0EB80028E16C /* pico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pico.mp3; path = ../../../../Downloads/pico.mp3; sourceTree = "<group>"; };
 		C232DB73212CC24500A52D8F /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		C2F373B621200CC200478AD0 /* TapTap-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapTap-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F373B921200CC200478AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C2282B93214B0E7A0028E16C /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C2282B96214B0EB80028E16C /* pico.mp3 */,
+				C2282B94214B0EAE0028E16C /* digital.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		C232DB72212CC1E900A52D8F /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +167,7 @@
 				C232DB72212CC1E900A52D8F /* model */,
 				C2F373E821200DF800478AD0 /* views */,
 				C2F373E721200DBC00478AD0 /* storyboard */,
+				C2282B93214B0E7A0028E16C /* sounds */,
 				C2F373C021200CC300478AD0 /* Assets.xcassets */,
 				C2F373C521200CC300478AD0 /* Info.plist */,
 			);
@@ -365,7 +379,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F373C421200CC300478AD0 /* LaunchScreen.storyboard in Resources */,
+				C2282B97214B0EB80028E16C /* pico.mp3 in Resources */,
 				C2F37401212057C900478AD0 /* GameViewController.xib in Resources */,
+				C2282B95214B0EAE0028E16C /* digital.mp3 in Resources */,
 				C2F373C121200CC300478AD0 /* Assets.xcassets in Resources */,
 				C2F37409212057E200478AD0 /* RankingViewController.xib in Resources */,
 				C2F373F021200E9100478AD0 /* Ranking.storyboard in Resources */,
