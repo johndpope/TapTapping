@@ -33,7 +33,7 @@ class GameViewController: UIViewController {
         leftNum = Int(arc4random_uniform(50))
         rightNum = Int(arc4random_uniform(50))
         showCount = Double(arc4random_uniform(UInt32(5.00)))
-//        print(showCount)
+        print(showCount)
     }
 
     override func didReceiveMemoryWarning() {
