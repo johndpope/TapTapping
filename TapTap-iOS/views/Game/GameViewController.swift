@@ -11,13 +11,15 @@ import AVFoundation
 
 class GameViewController: UIViewController {
     
-    var leftNum: Int = 0
-    var rightNum: Int = 0
-    var showCount: Double?
-
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var rLabel: UILabel!
     @IBOutlet weak var lLabel: UILabel!
+    
+    var leftNum: Int = 0
+    var rightNum: Int = 0
+//    var showCount: Double?
+    
+    let showCount = [1, 2, 3, 4, 5]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +34,9 @@ class GameViewController: UIViewController {
         
         leftNum = Int(arc4random_uniform(50))
         rightNum = Int(arc4random_uniform(50))
-        showCount = Double(arc4random_uniform(UInt32(5.00)))
-        print(showCount)
+//        showCount = Double(arc4random_uniform(UInt32(5.00)))
+//        print(showCount)
+        print(showCount[Int.random(in:0...4)])
     }
 
     override func didReceiveMemoryWarning() {
