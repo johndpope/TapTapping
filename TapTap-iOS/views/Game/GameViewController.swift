@@ -44,6 +44,7 @@ class GameViewController: UIViewController {
         rightNum = Int(arc4random_uniform(50))
         
 //        print(showCount[Int(arc4random()) % showCount.count])
+//        let timeInterval = showCount[Int(arc4random()) % showCount.count]
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,6 +53,11 @@ class GameViewController: UIViewController {
     
     func startTimer() {
         
+    }
+    
+    @objc func showNum() {
+        rLabel.text = String(rightNum)
+        lLabel.text = String(leftNum)
     }
     
     /*
@@ -68,6 +74,8 @@ class GameViewController: UIViewController {
     @IBAction func oStartButton(_ sender: Any) {
         startSound.currentTime = 0
         startSound.play()
+        let timeInterval = showCount[Int(arc4random()) % showCount.count]
+        Timer.scheduledTimer(timeInterval: TimeInterval(timeInterval), target: self, selector: #selector(GameViewController.showNum), userInfo: nil, repeats: true)
     }
     
     @IBAction func oRunkingButton(_ sender: Any) {
