@@ -9,7 +9,15 @@
 import UIKit
 import AVFoundation
 
+
 class GameViewController: UIViewController {
+    
+//    extension Array {
+//        func sample()->Element {
+//            // return self[Int(arc4random()) % self.count]
+//            return self[Int(arc4random_uniform(UInt32(showCount.count)))]
+//        }
+//    }
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var rLabel: UILabel!
@@ -34,9 +42,8 @@ class GameViewController: UIViewController {
         
         leftNum = Int(arc4random_uniform(50))
         rightNum = Int(arc4random_uniform(50))
-//        showCount = Double(arc4random_uniform(UInt32(5.00)))
-//        print(showCount)
-        print(showCount[Int.random(in:0...4)])
+        
+//        print(showCount[Int(arc4random()) % showCount.count])
     }
 
     override func didReceiveMemoryWarning() {
