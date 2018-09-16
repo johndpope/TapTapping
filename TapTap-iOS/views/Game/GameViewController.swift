@@ -6,17 +6,13 @@
 //  Copyright © 2018年 新宅　千晶. All rights reserved.
 //
 /*
- 1. [*] ラベルを表示するまでのランダムな間隔を設定、ラベルに表示する数字も用意
+ 1. [*] スタートボタンを押下でゲームを再スタートさせる
  
- 2. [*] スタートボタン押下で、タイマースタート。　設定した間隔でラベルに数字を表示
+ 2. [*] 少ない数をタップすると赤文字でアウトの表示
  
- 3. [ ] 数字がラベルに表示されたらカウント開始
+ 3. [ ] 少ない数をタップすると武ブーの効果音
  
- 4. [ ] ラベルがタップされたらタイムを表示
- 
- 5. [ ] 表示された数字をタップしたらマイランキングとタイトルボタンを表示する「初回画面表示時はボタンは非表示」
- 
- 6. [*] 看板設置
+ 4. [*] 表示までのタイマーが暴走している　-> タイマーは数字が表示されたらリセット
  */
 
 import UIKit
@@ -32,7 +28,6 @@ class GameViewController: UIViewController {
     var rightNum: Int = 0
     var leftNum: Int = 0
     var startTime: Date!
-//    var resultTime: Double = 0
     var myBenchMark: Benchmark?
     
     let showCount = [1, 2, 3, 4, 5]
@@ -52,11 +47,8 @@ class GameViewController: UIViewController {
         rLabel.text = "0"
         lLabel.text = "0"
         
-        leftNum = Int(arc4random_uniform(50))
-        rightNum = Int(arc4random_uniform(50))
-        
-//        print(showCount[Int(arc4random()) % showCount.count])
-//        let timeInterval = showCount[Int(arc4random()) % showCount.count]
+//        leftNum = Int(arc4random_uniform(50))
+//        rightNum = Int(arc4random_uniform(50))
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,18 +57,23 @@ class GameViewController: UIViewController {
     
     //MARK:- Method
     //    --------------------------------------------------------------------------------
-    //    startTimer()
+    //    showNum()
     //    --------------------------------------------------------------------------------
-    func startTimer() {
-//        let elapsed = showNum().timeIntervalSince(showNum)
-//        let elapsed = Date().timeIntervalSince(start)
-    }
-    
     @objc func showNum() {
         rLabel.text = String(rightNum)
         lLabel.text = String(leftNum)
-//        var startTime = Date()
         myBenchMark = Benchmark(key: "showNum()")
+        print("しょうナム")
+    }
+    
+    func judgment(myChoice: Int, singleNum: Int) {
+        if myChoice > singleNum {
+            scoreLabel.textColor = UIColor.white
+            scoreLabel.text = myBenchMark?.resultTime
+        } else {
+            scoreLabel.textColor = UIColor.red
+            scoreLabel.text = "アウト!!"
+        }
     }
     
     //MARK:- Action
@@ -84,10 +81,15 @@ class GameViewController: UIViewController {
     //    oStartButton(_ sender: Any)
     //    --------------------------------------------------------------------------------
     @IBAction func oStartButton(_ sender: Any) {
+        print("スタート押下")
+        scoreLabel.text = ""
+        leftNum = Int(arc4random_uniform(50))
+        rightNum = Int(arc4random_uniform(50))
         startSound.currentTime = 0
         startSound.play()
         let timeInterval = showCount[Int(arc4random()) % showCount.count]
-        Timer.scheduledTimer(timeInterval: TimeInterval(timeInterval), target: self, selector: #selector(GameViewController.showNum), userInfo: nil, repeats: true)
+        print(timeInterval)
+        Timer.scheduledTimer(timeInterval: TimeInterval(timeInterval), target: self, selector: #selector(GameViewController.showNum), userInfo: nil, repeats: false)
     }
     
     @IBAction func oRunkingButton(_ sender: Any) {
@@ -98,20 +100,16 @@ class GameViewController: UIViewController {
     
     @IBAction func oTitleButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-//        let storyboard: UIStoryboard = UIStoryboard(name: "Title", bundle: nil)
-//        let nextView = storyboard.instantiateViewController(withIdentifier: "TitleViewController")
-//        self.present(nextView, animated: true, completion: nil)
     }
+    
     @IBAction func oRightButton(_ sender: Any) {
-        print("ボタン押下")
         myBenchMark?.finish()
-//        let elapsed = Date().timeIntervalSince(self.startTime) as Double
-        scoreLabel.text = myBenchMark?.resultTime
+        judgment(myChoice: rightNum, singleNum: leftNum)
     }
+    
     @IBAction func oLeftButton(_ sender: Any) {
-        print("ボタン押下")
         myBenchMark?.finish()
-        scoreLabel.text = myBenchMark?.resultTime
+        judgment(myChoice: leftNum, singleNum: rightNum)
     }
     
 }

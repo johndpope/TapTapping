@@ -71,7 +71,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-EJ-5LL">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="203"/>
                                                 <connections>
-                                                    <action selector="oRightButton:" destination="kTf-VR-baP" eventType="touchUpInside" id="pkI-9a-38u"/>
+                                                    <action selector="oLeftButton:" destination="kTf-VR-baP" eventType="touchUpInside" id="JiZ-hl-2QV"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -110,13 +110,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bla-Zp-RRI">
-                                        <rect key="frame" x="52.5" y="478" width="270" height="54"/>
+                                        <rect key="frame" x="75" y="478" width="225" height="54"/>
                                         <color key="backgroundColor" name="Button"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="270" id="Xet-ta-Pbc"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
-                                        <state key="normal" title="マイランキング">
+                                        <state key="normal" title="ランキング">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -147,7 +144,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h6-kR-bNm">
                                         <rect key="frame" x="205" y="157" width="150" height="203"/>
                                         <connections>
-                                            <action selector="oLeftButton:" destination="kTf-VR-baP" eventType="touchUpInside" id="6Ij-m3-ySu"/>
+                                            <action selector="oRightButton:" destination="kTf-VR-baP" eventType="touchUpInside" id="VhX-dR-iRB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -174,6 +171,7 @@
                                     <constraint firstItem="EN5-8p-xXw" firstAttribute="centerX" secondItem="Nau-YC-oM9" secondAttribute="centerX" id="gT8-lT-oIk"/>
                                     <constraint firstItem="K30-n2-uUU" firstAttribute="width" secondItem="Tlo-fe-BGq" secondAttribute="width" id="iXk-xd-Db4"/>
                                     <constraint firstItem="K30-n2-uUU" firstAttribute="height" secondItem="Tlo-fe-BGq" secondAttribute="height" id="ifm-Mf-PiQ"/>
+                                    <constraint firstItem="bla-Zp-RRI" firstAttribute="width" secondItem="dCH-PD-5pZ" secondAttribute="width" id="ivv-P8-7Wm"/>
                                     <constraint firstItem="PhZ-Mg-H7f" firstAttribute="centerX" secondItem="Nau-YC-oM9" secondAttribute="centerX" id="kfr-H9-BC9"/>
                                     <constraint firstItem="dCH-PD-5pZ" firstAttribute="width" secondItem="Nau-YC-oM9" secondAttribute="height" multiplier="225:677" id="mSs-VY-rk9"/>
                                     <constraint firstItem="3h6-kR-bNm" firstAttribute="centerY" secondItem="K30-n2-uUU" secondAttribute="centerY" id="oFO-eP-K5Y"/>
