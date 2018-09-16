@@ -21,7 +21,6 @@
 		97B2CA3B87D617F75E70CFADCC7D1174 /* Pods-TapTap-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65957C82A399772FDA5C26F2D0F58A8C /* Pods-TapTap-iOS-dummy.m */; };
 		984844D5638B345C0461E16A9FEF5C62 /* Pods-TapTap-iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD10B65BBFF1DBB7998EA765A7819BA1 /* Pods-TapTap-iOSUITests-dummy.m */; };
 		AC6B09B882AB9E4F69E01941625018C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C2D22E4C214DDF0F0052D4CF /* Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D22E4B214DDF0F0052D4CF /* Benchmark.swift */; };
 		C8E6D37ACD515F329331D2C80D3861E3 /* Defaults+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAE6C0368B206FD8CA863490BBBB66 /* Defaults+Subscripts.swift */; };
 		E45C4DF5A94AD502976A09C9BE0650B0 /* Pods-TapTap-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A411335306000C75FAA4FB39A214BC57 /* Pods-TapTap-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA31025856E67C8531CB7DD165FA2BFB /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4660D96975057669C9022F748532D /* OptionalType.swift */; };
@@ -91,7 +90,6 @@
 		B7AEE2FD63DA6A20452DF821B5B7B642 /* Pods-TapTap-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TapTap-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B9941C2C83F60000A209192FADCA7F0E /* Pods-TapTap-iOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOSUITests-frameworks.sh"; sourceTree = "<group>"; };
 		BEE59FEDF593C31F335550AB5838DB52 /* Pods-TapTap-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TapTap-iOS-frameworks.sh"; sourceTree = "<group>"; };
-		C2D22E4B214DDF0F0052D4CF /* Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benchmark.swift; sourceTree = "<group>"; };
 		CB815EFB70ABC849A13E6C3D8563D8BF /* Pods-TapTap-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TapTap-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		CD10B65BBFF1DBB7998EA765A7819BA1 /* Pods-TapTap-iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TapTap-iOSUITests-dummy.m"; sourceTree = "<group>"; };
 		CDB6A35BBE2857397BCD06DE665B095E /* SwiftyUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUserDefaults-prefix.pch"; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				C2D22E4B214DDF0F0052D4CF /* Benchmark.swift */,
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				BA3FA1EDC76E89689D0AB438631CA112 /* Pods */,
@@ -428,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				97B2CA3B87D617F75E70CFADCC7D1174 /* Pods-TapTap-iOS-dummy.m in Sources */,
-				C2D22E4C214DDF0F0052D4CF /* Benchmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

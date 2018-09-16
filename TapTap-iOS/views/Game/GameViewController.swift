@@ -32,7 +32,8 @@ class GameViewController: UIViewController {
     var rightNum: Int = 0
     var leftNum: Int = 0
     var startTime: Date!
-    var resultTime: Double = 0
+//    var resultTime: Double = 0
+    var myBenchMark: Benchmark?
     
     let showCount = [1, 2, 3, 4, 5]
     
@@ -74,7 +75,8 @@ class GameViewController: UIViewController {
     @objc func showNum() {
         rLabel.text = String(rightNum)
         lLabel.text = String(leftNum)
-        var startTime = Date()
+//        var startTime = Date()
+        myBenchMark = Benchmark(key: "showNum()")
     }
     
     //MARK:- Action
@@ -102,11 +104,14 @@ class GameViewController: UIViewController {
     }
     @IBAction func oRightButton(_ sender: Any) {
         print("ボタン押下")
+        myBenchMark?.finish()
 //        let elapsed = Date().timeIntervalSince(self.startTime) as Double
-//        scoreLabel.text = String(elapsed)
+        scoreLabel.text = myBenchMark?.resultTime
     }
     @IBAction func oLeftButton(_ sender: Any) {
         print("ボタン押下")
+        myBenchMark?.finish()
+        scoreLabel.text = myBenchMark?.resultTime
     }
     
 }

@@ -13,6 +13,7 @@
 		C2282B95214B0EAE0028E16C /* digital.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2282B94214B0EAE0028E16C /* digital.mp3 */; };
 		C2282B97214B0EB80028E16C /* pico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2282B96214B0EB80028E16C /* pico.mp3 */; };
 		C232DB74212CC24500A52D8F /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232DB73212CC24500A52D8F /* model.swift */; };
+		C2D22E52214E5D7F0052D4CF /* Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D22E51214E5D7F0052D4CF /* Benchmark.swift */; };
 		C2F373BA21200CC200478AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373B921200CC200478AD0 /* AppDelegate.swift */; };
 		C2F373BF21200CC200478AD0 /* Title.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F373BD21200CC200478AD0 /* Title.storyboard */; };
 		C2F373C121200CC300478AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F373C021200CC300478AD0 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		C2282B94214B0EAE0028E16C /* digital.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = digital.mp3; path = ../../../../Downloads/digital.mp3; sourceTree = "<group>"; };
 		C2282B96214B0EB80028E16C /* pico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pico.mp3; path = ../../../../Downloads/pico.mp3; sourceTree = "<group>"; };
 		C232DB73212CC24500A52D8F /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		C2D22E51214E5D7F0052D4CF /* Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benchmark.swift; sourceTree = "<group>"; };
 		C2F373B621200CC200478AD0 /* TapTap-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapTap-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F373B921200CC200478AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2F373BE21200CC200478AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Title.storyboard; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C2F373B921200CC200478AD0 /* AppDelegate.swift */,
+				C2D22E51214E5D7F0052D4CF /* Benchmark.swift */,
 				C2F373B821200CC200478AD0 /* TapTap-iOS */,
 				C2F373CD21200CC300478AD0 /* TapTap-iOSTests */,
 				C2F373D821200CC300478AD0 /* TapTap-iOSUITests */,
@@ -488,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F37400212057C900478AD0 /* GameViewController.swift in Sources */,
+				C2D22E52214E5D7F0052D4CF /* Benchmark.swift in Sources */,
 				C232DB74212CC24500A52D8F /* model.swift in Sources */,
 				C2F373BA21200CC200478AD0 /* AppDelegate.swift in Sources */,
 				C2F3741321242F9600478AD0 /* BackGround.swift in Sources */,
