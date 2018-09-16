@@ -11,6 +11,7 @@ import AVFoundation
 
 var startSound: AVAudioPlayer!
 var stopSound: AVAudioPlayer!
+var badSound: AVAudioPlayer!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,13 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //ボタンの音をバッファに読み込んでおく
         let stpSound = Bundle.main.url(forResource: "digital", withExtension: "mp3")!
         let strSound = Bundle.main.url(forResource: "pico", withExtension: "mp3")!
+        let failSound = Bundle.main.url(forResource: "failure", withExtension: "mp3")!
         do {
             try startSound = AVAudioPlayer(contentsOf: strSound)
             try stopSound = AVAudioPlayer(contentsOf: stpSound)
+            try badSound = AVAudioPlayer(contentsOf: failSound)
             startSound.stop()
             stopSound.stop()
+            badSound.stop()
             startSound.prepareToPlay()
             stopSound.prepareToPlay()
+            badSound.prepareToPlay()
         } catch {
             print(error)
         }

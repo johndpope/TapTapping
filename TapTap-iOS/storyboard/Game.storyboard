@@ -195,6 +195,8 @@
                     </view>
                     <connections>
                         <outlet property="lLabel" destination="neK-9g-t8e" id="WMs-vw-FUy"/>
+                        <outlet property="oLeftButton" destination="bZK-EJ-5LL" id="ZWU-Cw-83O"/>
+                        <outlet property="oRightButton" destination="3h6-kR-bNm" id="Uah-GJ-A50"/>
                         <outlet property="rLabel" destination="K30-n2-uUU" id="oPn-ep-57c"/>
                         <outlet property="scoreLabel" destination="F4R-xm-JFb" id="flS-Ei-EP6"/>
                     </connections>

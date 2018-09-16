@@ -10,7 +10,7 @@
  
  2. [*] 少ない数をタップすると赤文字でアウトの表示
  
- 3. [ ] 少ない数をタップすると武ブーの効果音
+ 3. [*] 少ない数をタップすると武ブーの効果音
  
  4. [*] 表示までのタイマーが暴走している　-> タイマーは数字が表示されたらリセット
  */
@@ -24,6 +24,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var rLabel: UILabel!
     @IBOutlet weak var lLabel: UILabel!
+    @IBOutlet weak var oRightButton: UIButton!
+    @IBOutlet weak var oLeftButton: UIButton!
     
     var rightNum: Int = 0
     var leftNum: Int = 0
@@ -47,6 +49,8 @@ class GameViewController: UIViewController {
         rLabel.text = "0"
         lLabel.text = "0"
         
+        btnStateManager()
+        
 //        leftNum = Int(arc4random_uniform(50))
 //        rightNum = Int(arc4random_uniform(50))
     }
@@ -60,6 +64,8 @@ class GameViewController: UIViewController {
     //    showNum()
     //    --------------------------------------------------------------------------------
     @objc func showNum() {
+        oRightButton.isHidden = false
+        oLeftButton.isHidden = false
         rLabel.text = String(rightNum)
         lLabel.text = String(leftNum)
         myBenchMark = Benchmark(key: "showNum()")
@@ -68,12 +74,19 @@ class GameViewController: UIViewController {
     
     func judgment(myChoice: Int, singleNum: Int) {
         if myChoice > singleNum {
+            stopSound.play()
             scoreLabel.textColor = UIColor.white
             scoreLabel.text = myBenchMark?.resultTime
         } else {
+            badSound.play()
             scoreLabel.textColor = UIColor.red
             scoreLabel.text = "アウト!!"
         }
+    }
+    
+    func btnStateManager() {
+        oRightButton.isHidden = true
+        oLeftButton.isHidden = true
     }
     
     //MARK:- Action
@@ -81,8 +94,12 @@ class GameViewController: UIViewController {
     //    oStartButton(_ sender: Any)
     //    --------------------------------------------------------------------------------
     @IBAction func oStartButton(_ sender: Any) {
-        print("スタート押下")
+        btnStateManager()
+//        oRightButton.isHidden = false
+//        oLeftButton.isHidden = false
         scoreLabel.text = ""
+        rLabel.text = "0"
+        lLabel.text = "0"
         leftNum = Int(arc4random_uniform(50))
         rightNum = Int(arc4random_uniform(50))
         startSound.currentTime = 0
