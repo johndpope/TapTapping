@@ -1,23 +1,5 @@
-//
-//  GameViewController.swift
-//  TapTap-iOS
-//
-//  Created by chi on 2018/08/12.
-//  Copyright © 2018年 新宅　千晶. All rights reserved.
-//
-/*
- 1. [*] スタートボタンを押下でゲームを再スタートさせる
- 
- 2. [*] 少ない数をタップすると赤文字でアウトの表示
- 
- 3. [*] 少ない数をタップすると武ブーの効果音
- 
- 4. [*] 表示までのタイマーが暴走している　-> タイマーは数字が表示されたらリセット
- */
-
 import UIKit
 import AVFoundation
-
 
 class GameViewController: UIViewController {
     
@@ -26,6 +8,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var lLabel: UILabel!
     @IBOutlet weak var oRightButton: UIButton!
     @IBOutlet weak var oLeftButton: UIButton!
+    @IBOutlet weak var oStartButton: UIButton!
     
     var rightNum: Int = 0
     var leftNum: Int = 0
@@ -50,9 +33,6 @@ class GameViewController: UIViewController {
         lLabel.text = "0"
         
         btnStateManager()
-        
-//        leftNum = Int(arc4random_uniform(50))
-//        rightNum = Int(arc4random_uniform(50))
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +49,6 @@ class GameViewController: UIViewController {
         rLabel.text = String(rightNum)
         lLabel.text = String(leftNum)
         myBenchMark = Benchmark(key: "showNum()")
-        print("しょうナム")
     }
     
     func judgment(myChoice: Int, singleNum: Int) {
@@ -94,9 +73,7 @@ class GameViewController: UIViewController {
     //    oStartButton(_ sender: Any)
     //    --------------------------------------------------------------------------------
     @IBAction func oStartButton(_ sender: Any) {
-        btnStateManager()
-//        oRightButton.isHidden = false
-//        oLeftButton.isHidden = false
+        oStartButton.isEnabled = false
         scoreLabel.text = ""
         rLabel.text = "0"
         lLabel.text = "0"
@@ -122,11 +99,14 @@ class GameViewController: UIViewController {
     @IBAction func oRightButton(_ sender: Any) {
         myBenchMark?.finish()
         judgment(myChoice: rightNum, singleNum: leftNum)
+        btnStateManager()
+        oStartButton.isEnabled = true
     }
     
     @IBAction func oLeftButton(_ sender: Any) {
         myBenchMark?.finish()
         judgment(myChoice: leftNum, singleNum: rightNum)
+        btnStateManager()
+        oStartButton.isEnabled = true
     }
-    
 }
