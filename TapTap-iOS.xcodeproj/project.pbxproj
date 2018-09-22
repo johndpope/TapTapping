@@ -13,6 +13,7 @@
 		C2282B95214B0EAE0028E16C /* digital.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2282B94214B0EAE0028E16C /* digital.mp3 */; };
 		C2282B97214B0EB80028E16C /* pico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2282B96214B0EB80028E16C /* pico.mp3 */; };
 		C232DB74212CC24500A52D8F /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232DB73212CC24500A52D8F /* model.swift */; };
+		C262FFB1215614A50022EFB6 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C262FFB0215614A50022EFB6 /* RankingTableViewCell.swift */; };
 		C2D22E52214E5D7F0052D4CF /* Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D22E51214E5D7F0052D4CF /* Benchmark.swift */; };
 		C2D22E54214E6E680052D4CF /* failure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2D22E53214E6E680052D4CF /* failure.mp3 */; };
 		C2F373BA21200CC200478AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373B921200CC200478AD0 /* AppDelegate.swift */; };
@@ -59,6 +60,7 @@
 		C2282B94214B0EAE0028E16C /* digital.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = digital.mp3; path = ../../../../Downloads/digital.mp3; sourceTree = "<group>"; };
 		C2282B96214B0EB80028E16C /* pico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pico.mp3; path = ../../../../Downloads/pico.mp3; sourceTree = "<group>"; };
 		C232DB73212CC24500A52D8F /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		C262FFB0215614A50022EFB6 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		C2D22E51214E5D7F0052D4CF /* Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benchmark.swift; sourceTree = "<group>"; };
 		C2D22E53214E6E680052D4CF /* failure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = failure.mp3; path = ../../../../Downloads/failure.mp3; sourceTree = "<group>"; };
 		C2F373B621200CC200478AD0 /* TapTap-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapTap-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,6 +245,7 @@
 			children = (
 				C2F37406212057E200478AD0 /* RankingViewController.swift */,
 				C2F37407212057E200478AD0 /* RankingViewController.xib */,
+				C262FFB0215614A50022EFB6 /* RankingTableViewCell.swift */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 			files = (
 				C2F37400212057C900478AD0 /* GameViewController.swift in Sources */,
 				C2D22E52214E5D7F0052D4CF /* Benchmark.swift in Sources */,
+				C262FFB1215614A50022EFB6 /* RankingTableViewCell.swift in Sources */,
 				C232DB74212CC24500A52D8F /* model.swift in Sources */,
 				C2F373BA21200CC200478AD0 /* AppDelegate.swift in Sources */,
 				C2F3741321242F9600478AD0 /* BackGround.swift in Sources */,
