@@ -18,21 +18,33 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        readDate()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rankNum.count
+//        return rankNum.count
+        return Defaults[.scoreRecord].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! RankingTableViewCell
         cell.backgroundColor = UIColor.clear
         cell.rankLabel?.text = rankNum[indexPath.row]
-        let test = Defaults[.scoreRecord]
-        print(test)
+//        let test = Defaults[.scoreRecord]
+//        let test = Defaults[.scoreRecord](repeating: 0, count: 9)
+//        print(test)
+//        let array = Defaults.scoreRecord(forKey: "scoreRecord") ?? [String]()
+        let score = Defaults[.scoreRecord]
+        cell.scoreLabel?.text = score[indexPath.row]
+        //        print(UserDefaults.standard.dictionaryRepresentation().values)
+
         return cell
     }
 }

@@ -1,5 +1,6 @@
 import UIKit
 import AVFoundation
+import SwiftyUserDefaults
 
 class GameViewController: UIViewController {
     
@@ -23,6 +24,7 @@ class GameViewController: UIViewController {
     //    --------------------------------------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(Defaults[.scoreRecord])
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +58,9 @@ class GameViewController: UIViewController {
             stopSound.play()
             scoreLabel.textColor = UIColor.white
             scoreLabel.text = myBenchMark?.resultTime
+            print(myBenchMark?.resultTime)
+//            Defaults[.scoreRecord] = [myBenchMark!.resultTime]
+            Defaults[.scoreRecord].append(myBenchMark!.resultTime)
         } else {
             badSound.play()
             scoreLabel.textColor = UIColor.red
