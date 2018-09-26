@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gkd-Bj-o33">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3pn-rQ-dhF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,19 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1a-YX-M2H">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="BackGround"/>
-                                <items>
-                                    <navigationItem leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="i3g-cC-4iF"/>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTh-K6-qxr">
-                                <rect key="frame" x="0.0" y="44" width="375" height="633"/>
+                                <rect key="frame" x="0.0" y="87" width="375" height="612"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-4O-9Je">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="633"/>
+                                        <rect key="frame" x="0.0" y="75" width="375" height="558"/>
                                         <color key="backgroundColor" name="BackGround"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="60" id="tjF-yD-0so" customClass="RankingTableViewCell" customModule="TapTap_iOS" customModuleProvider="target">
@@ -84,8 +76,8 @@
                                 <color key="backgroundColor" name="BackGround"/>
                                 <constraints>
                                     <constraint firstItem="nOk-4O-9Je" firstAttribute="centerX" secondItem="JTh-K6-qxr" secondAttribute="centerX" id="32b-Km-bzg"/>
-                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="centerY" secondItem="JTh-K6-qxr" secondAttribute="centerY" id="QCJ-CR-6U6"/>
-                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" id="pOl-sT-6C3"/>
+                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="centerY" secondItem="JTh-K6-qxr" secondAttribute="centerY" constant="48" id="QCJ-CR-6U6"/>
+                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" constant="-54" id="pOl-sT-6C3"/>
                                     <constraint firstItem="nOk-4O-9Je" firstAttribute="width" secondItem="JTh-K6-qxr" secondAttribute="width" id="rOt-fS-EJR"/>
                                 </constraints>
                             </view>
@@ -93,17 +85,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JTh-K6-qxr" firstAttribute="width" secondItem="4nM-nx-Vaf" secondAttribute="width" id="9cM-w3-5J7"/>
-                            <constraint firstItem="JTh-K6-qxr" firstAttribute="centerY" secondItem="EYR-DO-G1K" secondAttribute="centerY" constant="17" id="IOn-Ao-fYk"/>
+                            <constraint firstItem="JTh-K6-qxr" firstAttribute="centerY" secondItem="EYR-DO-G1K" secondAttribute="centerY" constant="27.5" id="IOn-Ao-fYk"/>
                             <constraint firstItem="JTh-K6-qxr" firstAttribute="centerX" secondItem="EYR-DO-G1K" secondAttribute="centerX" id="NM0-tM-aad"/>
-                            <constraint firstItem="JTh-K6-qxr" firstAttribute="height" secondItem="4nM-nx-Vaf" secondAttribute="height" constant="-34" id="dHQ-D5-Our"/>
+                            <constraint firstItem="JTh-K6-qxr" firstAttribute="height" secondItem="4nM-nx-Vaf" secondAttribute="height" constant="-55" id="dHQ-D5-Our"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EYR-DO-G1K"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Gb3-YJ-Gbw"/>
                     <connections>
                         <outlet property="tableView" destination="nOk-4O-9Je" id="3jC-9J-5Gb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbJ-11-3pO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096.8" y="160.56971514242881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rYL-US-Cwi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3pn-rQ-dhF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e4H-hB-Vxe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gkd-Bj-o33" kind="relationship" relationship="rootViewController" id="Ser-lX-Qh8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Our-aF-5fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="157.59999999999999" y="160.56971514242881"/>
         </scene>
