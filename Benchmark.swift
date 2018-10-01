@@ -26,9 +26,10 @@ class Benchmark {
     func finish() {
         let elapsed = NSDate().timeIntervalSince(self.startTime as Date) as Double
         let formatedElapsed = String(format: "%.3f", elapsed)
-        resultTime = String(formatedElapsed) + "秒"
+//        resultTime = String(formatedElapsed) + "秒"
 //        print("Benchmark: \(key), Elasped time: \(formatedElapsed)(s)")
-        print("\(formatedElapsed)(秒)")
+        resultTime = String(formatedElapsed)
+//        print("\(formatedElapsed)(秒)")
     }
     
     // 処理をブロックで受け取る

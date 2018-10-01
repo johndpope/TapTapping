@@ -10,6 +10,6 @@ import Foundation
 import SwiftyUserDefaults
 
 extension DefaultsKeys {
-    static let scoreRecord = DefaultsKey<[String]>("scoreRecord")
+    static let scoreRecord = DefaultsKey<[Double]>("scoreRecord")
 }
 
