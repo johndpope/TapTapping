@@ -54,7 +54,7 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.backgroundColor = UIColor.clear
         cell.rankLabel?.text = rankNum[indexPath.row]
         let score = Defaults[.scoreRecord]
-//        cell.scoreLabel?.text = score[indexPath.row]
+        cell.scoreLabel?.text = String(score[indexPath.row])
         return cell
     }
 }

@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
     
     let showCount = [1, 2, 3, 4, 5]
     
+    
     //MARK:- Override
     //    --------------------------------------------------------------------------------
     //    viewDidLoad()
