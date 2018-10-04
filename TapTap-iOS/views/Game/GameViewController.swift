@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 import AVFoundation
 import SwiftyUserDefaults
 
@@ -17,7 +18,7 @@ class GameViewController: UIViewController {
     var myBenchMark: Benchmark?
     
     let showCount = [1, 2, 3, 4, 5]
-    
+    let appDataBase = AppDataBase.instance
     
     //MARK:- Override
     //    --------------------------------------------------------------------------------
@@ -61,6 +62,7 @@ class GameViewController: UIViewController {
             Defaults[.scoreRecord].append(Double(resultString)!)
             let cast: Double = Double(resultString)!
 //            print(myBenchMark?.resultTime)
+            appDataBase.sortScore(cast)
             print("キャスト\(cast)")
         } else {
 //            badSound.play()

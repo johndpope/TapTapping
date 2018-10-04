@@ -22,23 +22,22 @@ extension DefaultsKeys {
     static let scoreRecord = DefaultsKey<[Double]>("scoreRecord")
 }
 
-final class model {
+final class AppDataBase {
     
-    fileprivate init() {
-    }
+    static let instance = AppDataBase()
     
-    static let instance = model()
-    
-    func sortScore(_ score: Double) {
+    private init() {}
+
+    func sortScore(_ newScore: Double) {
+//        var oldScore = Defaults[.scoreRecord]
         if Defaults[.scoreRecord].count <= 9 {
-            Defaults[.scoreRecord].append(score)
+            Defaults[.scoreRecord].append(newScore)
             Defaults[.scoreRecord].sort()
             Defaults[.scoreRecord].remove(at: 10)
         } else {
-            Defaults[.scoreRecord].append(score)
+            Defaults[.scoreRecord].append(newScore)
             Defaults[.scoreRecord].sort()
         }
     }
-    
 }
 
