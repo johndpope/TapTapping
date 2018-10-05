@@ -22,22 +22,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //ボタンの音をバッファに読み込んでおく
-//        let stpSound = Bundle.main.url(forResource: "digital", withExtension: "mp3")!
-//        let strSound = Bundle.main.url(forResource: "pico", withExtension: "mp3")!
-//        let failSound = Bundle.main.url(forResource: "failure", withExtension: "mp3")!
-//        do {
-//            try startSound = AVAudioPlayer(contentsOf: strSound)
-//            try stopSound = AVAudioPlayer(contentsOf: stpSound)
-//            try badSound = AVAudioPlayer(contentsOf: failSound)
-//            startSound.stop()
-//            stopSound.stop()
-//            badSound.stop()
-//            startSound.prepareToPlay()
-//            stopSound.prepareToPlay()
-//            badSound.prepareToPlay()
-//        } catch {
-//            print(error)
-//        }
+        let stpSound = Bundle.main.url(forResource: "good", withExtension: "mp3")!
+        let strSound = Bundle.main.url(forResource: "btnSound", withExtension: "mp3")!
+        let failSound = Bundle.main.url(forResource: "bad", withExtension: "mp3")!
+        do {
+            try startSound = AVAudioPlayer(contentsOf: strSound)
+            try stopSound = AVAudioPlayer(contentsOf: stpSound)
+            try badSound = AVAudioPlayer(contentsOf: failSound)
+            startSound.stop()
+            stopSound.stop()
+            badSound.stop()
+            startSound.prepareToPlay()
+            stopSound.prepareToPlay()
+            badSound.prepareToPlay()
+        } catch {
+            print(error)
+        }
         return true
     }
 

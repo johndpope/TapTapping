@@ -26,6 +26,7 @@ class GameViewController: UIViewController {
     //    --------------------------------------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
+//        Defaults[.scoreRecord].removeAll()
 //        print(Defaults[.scoreRecord])
     }
     
@@ -55,17 +56,14 @@ class GameViewController: UIViewController {
     
     func judgment(myChoice: Int, singleNum: Int) {
         if myChoice > singleNum {
-//            stopSound.play()
+            stopSound.play()
             scoreLabel.textColor = UIColor.white
             scoreLabel.text = myBenchMark?.resultTime
             let resultString = myBenchMark!.resultTime
-            Defaults[.scoreRecord].append(Double(resultString)!)
             let cast: Double = Double(resultString)!
-//            print(myBenchMark?.resultTime)
             appDataBase.sortScore(cast)
-            print("キャスト\(cast)")
         } else {
-//            badSound.play()
+            badSound.play()
             scoreLabel.textColor = UIColor.red
             scoreLabel.text = "アウト!!"
         }
@@ -87,10 +85,9 @@ class GameViewController: UIViewController {
         lLabel.text = "0"
         leftNum = Int(arc4random_uniform(50))
         rightNum = Int(arc4random_uniform(50))
-//        startSound.currentTime = 0
-//        startSound.play()
+        startSound.currentTime = 0
+        startSound.play()
         let timeInterval = showCount[Int(arc4random()) % showCount.count]
-//        print(timeInterval)
         Timer.scheduledTimer(timeInterval: TimeInterval(timeInterval), target: self, selector: #selector(GameViewController.showNum), userInfo: nil, repeats: false)
     }
     
