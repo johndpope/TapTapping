@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import Firebase
+import GoogleMobileAds
 
 var startSound: AVAudioPlayer!
 var stopSound: AVAudioPlayer!
@@ -38,6 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print(error)
         }
+        FirebaseApp.configure()
+        //  サンプルApp ID
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
         return true
     }
 
