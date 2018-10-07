@@ -8,6 +8,8 @@ target 'TapTap-iOS' do
   # Pods for TapTap-iOS
 pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
 pod 'Firebase/Core'
+pod 'Google-Mobile-Ads-SDK'
+
   target 'TapTap-iOSTests' do
     inherit! :search_paths
     # Pods for testing
