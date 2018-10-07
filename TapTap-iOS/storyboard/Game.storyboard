@@ -120,7 +120,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="oRunkingButton:" destination="kTf-VR-baP" eventType="touchUpInside" id="yse-H9-F3N"/>
+                                            <action selector="oRunkingButton:" destination="kTf-VR-baP" eventType="touchUpInside" id="mGe-Ei-ie6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN5-8p-xXw">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3pn-rQ-dhF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gkd-Bj-o33">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTh-K6-qxr">
-                                <rect key="frame" x="0.0" y="87" width="375" height="612"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-4O-9Je">
-                                        <rect key="frame" x="0.0" y="75" width="375" height="558"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
                                         <color key="backgroundColor" name="BackGround"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="60" id="tjF-yD-0so" customClass="RankingTableViewCell" customModule="TapTap_iOS" customModuleProvider="target">
@@ -72,12 +72,32 @@
                                             <outlet property="delegate" destination="gkd-Bj-o33" id="0Nf-fR-mx6"/>
                                         </connections>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bly-Ve-vBk">
+                                        <rect key="frame" x="75" y="593" width="225" height="54"/>
+                                        <color key="backgroundColor" name="Button"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="ゲーム">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gameView:" destination="gkd-Bj-o33" eventType="touchUpInside" id="hBS-0T-AvO"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="BackGround"/>
                                 <constraints>
                                     <constraint firstItem="nOk-4O-9Je" firstAttribute="centerX" secondItem="JTh-K6-qxr" secondAttribute="centerX" id="32b-Km-bzg"/>
-                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="centerY" secondItem="JTh-K6-qxr" secondAttribute="centerY" constant="48" id="QCJ-CR-6U6"/>
-                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" constant="-54" id="pOl-sT-6C3"/>
+                                    <constraint firstItem="bly-Ve-vBk" firstAttribute="width" secondItem="JTh-K6-qxr" secondAttribute="width" multiplier="0.6" id="Lqh-D1-25q"/>
+                                    <constraint firstItem="bly-Ve-vBk" firstAttribute="centerX" secondItem="JTh-K6-qxr" secondAttribute="centerX" id="NqU-Uu-GUU"/>
+                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="centerY" secondItem="JTh-K6-qxr" secondAttribute="centerY" constant="-54" id="QCJ-CR-6U6"/>
+                                    <constraint firstItem="bly-Ve-vBk" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" multiplier="0.08" id="Qu4-0H-VI2"/>
+                                    <constraint firstAttribute="bottom" secondItem="bly-Ve-vBk" secondAttribute="bottom" constant="30" id="SEA-sF-wFV"/>
+                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" constant="-108" id="pOl-sT-6C3"/>
                                     <constraint firstItem="nOk-4O-9Je" firstAttribute="width" secondItem="JTh-K6-qxr" secondAttribute="width" id="rOt-fS-EJR"/>
                                 </constraints>
                             </view>
@@ -85,43 +105,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JTh-K6-qxr" firstAttribute="width" secondItem="4nM-nx-Vaf" secondAttribute="width" id="9cM-w3-5J7"/>
-                            <constraint firstItem="JTh-K6-qxr" firstAttribute="centerY" secondItem="EYR-DO-G1K" secondAttribute="centerY" constant="27.5" id="IOn-Ao-fYk"/>
+                            <constraint firstItem="JTh-K6-qxr" firstAttribute="centerY" secondItem="EYR-DO-G1K" secondAttribute="centerY" constant="-5" id="IOn-Ao-fYk"/>
                             <constraint firstItem="JTh-K6-qxr" firstAttribute="centerX" secondItem="EYR-DO-G1K" secondAttribute="centerX" id="NM0-tM-aad"/>
-                            <constraint firstItem="JTh-K6-qxr" firstAttribute="height" secondItem="4nM-nx-Vaf" secondAttribute="height" constant="-55" id="dHQ-D5-Our"/>
+                            <constraint firstItem="JTh-K6-qxr" firstAttribute="height" secondItem="4nM-nx-Vaf" secondAttribute="height" constant="10" id="dHQ-D5-Our"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EYR-DO-G1K"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Gb3-YJ-Gbw"/>
                     <connections>
                         <outlet property="tableView" destination="nOk-4O-9Je" id="3jC-9J-5Gb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbJ-11-3pO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096.8" y="160.56971514242881"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="rYL-US-Cwi">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3pn-rQ-dhF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e4H-hB-Vxe">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="gkd-Bj-o33" kind="relationship" relationship="rootViewController" id="Ser-lX-Qh8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Our-aF-5fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="157.59999999999999" y="160.56971514242881"/>
+            <point key="canvasLocation" x="2036" y="160.56971514242881"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="BackGround">
             <color red="0.27058823529411763" green="0.19215686274509805" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button">
+            <color red="0.37647058823529411" green="0.81568627450980391" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

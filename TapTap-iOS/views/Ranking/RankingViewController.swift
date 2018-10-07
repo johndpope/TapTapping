@@ -57,4 +57,9 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.scoreLabel?.text = String(score[indexPath.row])
         return cell
     }
+    @IBAction func gameView(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Game", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "GameViewController")
+        self.present(nextView, animated: true, completion: nil)
+    }
 }
