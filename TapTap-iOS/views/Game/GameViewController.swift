@@ -2,6 +2,8 @@ import UIKit
 import Foundation
 import AVFoundation
 import SwiftyUserDefaults
+import GoogleMobileAds
+import Firebase
 
 class GameViewController: UIViewController {
     
@@ -16,6 +18,7 @@ class GameViewController: UIViewController {
     var leftNum: Int = 0
     var startTime: Date!
     var myBenchMark: Benchmark?
+    @IBOutlet weak var bannerView: GADBannerView!
     
     let showCount = [1, 2, 3, 4, 5]
     let appDataBase = AppDataBase.instance
@@ -26,6 +29,9 @@ class GameViewController: UIViewController {
     //    --------------------------------------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
 //        Defaults[.scoreRecord].removeAll()
 //        print(Defaults[.scoreRecord])
     }

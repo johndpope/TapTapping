@@ -8,9 +8,12 @@
 
 import UIKit
 import SwiftyUserDefaults
+import GoogleMobileAds
+import Firebase
 
 class RankingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var tableView: UITableView!
     
     let rankNum: [String] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
@@ -21,9 +24,12 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     //    --------------------------------------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
 //        self.navigationController?.popViewController(animated: true)
-        let leftBarButton = UIBarButtonItem(title: "<", style: .plain, target: self, action: #selector(RankingViewController.tappedLeftBarButton))
-        self.navigationItem.leftBarButtonItem = leftBarButton
+//        let leftBarButton = UIBarButtonItem(title: "<", style: .plain, target: self, action: #selector(RankingViewController.tappedLeftBarButton))
+//        self.navigationItem.leftBarButtonItem = leftBarButton
     }
     
     override func viewWillAppear(_ animated: Bool) {

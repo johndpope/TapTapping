@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-4O-9Je">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="535"/>
                                         <color key="backgroundColor" name="BackGround"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="60" id="tjF-yD-0so" customClass="RankingTableViewCell" customModule="TapTap_iOS" customModuleProvider="target">
@@ -88,16 +88,26 @@
                                             <action selector="gameView:" destination="gkd-Bj-o33" eventType="touchUpInside" id="hBS-0T-AvO"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4k-12-WfP" customClass="GADBannerView">
+                                        <rect key="frame" x="27.5" y="539" width="320" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="bcj-Vc-f2X"/>
+                                            <constraint firstAttribute="height" constant="50" id="z4l-Zs-xcz"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" name="BackGround"/>
                                 <constraints>
+                                    <constraint firstItem="y4k-12-WfP" firstAttribute="centerX" secondItem="JTh-K6-qxr" secondAttribute="centerX" id="1xP-Oe-mZS"/>
                                     <constraint firstItem="nOk-4O-9Je" firstAttribute="centerX" secondItem="JTh-K6-qxr" secondAttribute="centerX" id="32b-Km-bzg"/>
                                     <constraint firstItem="bly-Ve-vBk" firstAttribute="width" secondItem="JTh-K6-qxr" secondAttribute="width" multiplier="0.6" id="Lqh-D1-25q"/>
                                     <constraint firstItem="bly-Ve-vBk" firstAttribute="centerX" secondItem="JTh-K6-qxr" secondAttribute="centerX" id="NqU-Uu-GUU"/>
-                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="centerY" secondItem="JTh-K6-qxr" secondAttribute="centerY" constant="-54" id="QCJ-CR-6U6"/>
+                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="centerY" secondItem="JTh-K6-qxr" secondAttribute="centerY" constant="-71" id="QCJ-CR-6U6"/>
                                     <constraint firstItem="bly-Ve-vBk" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" multiplier="0.08" id="Qu4-0H-VI2"/>
                                     <constraint firstAttribute="bottom" secondItem="bly-Ve-vBk" secondAttribute="bottom" constant="30" id="SEA-sF-wFV"/>
-                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" constant="-108" id="pOl-sT-6C3"/>
+                                    <constraint firstItem="bly-Ve-vBk" firstAttribute="top" secondItem="y4k-12-WfP" secondAttribute="bottom" constant="4" id="dAv-UO-9pD"/>
+                                    <constraint firstItem="nOk-4O-9Je" firstAttribute="height" secondItem="JTh-K6-qxr" secondAttribute="height" constant="-142" id="pOl-sT-6C3"/>
                                     <constraint firstItem="nOk-4O-9Je" firstAttribute="width" secondItem="JTh-K6-qxr" secondAttribute="width" id="rOt-fS-EJR"/>
                                 </constraints>
                             </view>
@@ -112,6 +122,7 @@
                         <viewLayoutGuide key="safeArea" id="EYR-DO-G1K"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="y4k-12-WfP" id="m2W-C9-bs2"/>
                         <outlet property="tableView" destination="nOk-4O-9Je" id="3jC-9J-5Gb"/>
                     </connections>
                 </viewController>
