@@ -18,18 +18,14 @@
 		C262FFB92169F6C80022EFB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C262FFB82169F6C80022EFB6 /* GoogleService-Info.plist */; };
 		C2D22E52214E5D7F0052D4CF /* Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D22E51214E5D7F0052D4CF /* Benchmark.swift */; };
 		C2F373BA21200CC200478AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373B921200CC200478AD0 /* AppDelegate.swift */; };
-		C2F373BF21200CC200478AD0 /* Title.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F373BD21200CC200478AD0 /* Title.storyboard */; };
 		C2F373C121200CC300478AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F373C021200CC300478AD0 /* Assets.xcassets */; };
 		C2F373C421200CC300478AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F373C221200CC300478AD0 /* LaunchScreen.storyboard */; };
 		C2F373CF21200CC300478AD0 /* TapTap_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373CE21200CC300478AD0 /* TapTap_iOSTests.swift */; };
 		C2F373DA21200CC300478AD0 /* TapTap_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373D921200CC300478AD0 /* TapTap_iOSUITests.swift */; };
 		C2F373EC21200E7200478AD0 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F373EB21200E7200478AD0 /* Game.storyboard */; };
 		C2F373F021200E9100478AD0 /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F373EF21200E9100478AD0 /* Ranking.storyboard */; };
-		C2F373F821200F8000478AD0 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373F621200F8000478AD0 /* TitleViewController.swift */; };
 		C2F37400212057C900478AD0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F373FE212057C900478AD0 /* GameViewController.swift */; };
-		C2F37401212057C900478AD0 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2F373FF212057C900478AD0 /* GameViewController.xib */; };
 		C2F37408212057E200478AD0 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F37406212057E200478AD0 /* RankingViewController.swift */; };
-		C2F37409212057E200478AD0 /* RankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2F37407212057E200478AD0 /* RankingViewController.xib */; };
 		C2F3741121242F6A00478AD0 /* BackGround.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2F3741021242F6A00478AD0 /* BackGround.xib */; };
 		C2F3741321242F9600478AD0 /* BackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3741221242F9600478AD0 /* BackGround.swift */; };
 /* End PBXBuildFile section */
@@ -67,7 +63,6 @@
 		C2D22E51214E5D7F0052D4CF /* Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benchmark.swift; sourceTree = "<group>"; };
 		C2F373B621200CC200478AD0 /* TapTap-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapTap-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F373B921200CC200478AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2F373BE21200CC200478AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Title.storyboard; sourceTree = "<group>"; };
 		C2F373C021200CC300478AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2F373C321200CC300478AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2F373C521200CC300478AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,11 +74,8 @@
 		C2F373DB21200CC300478AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2F373EB21200E7200478AD0 /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		C2F373EF21200E9100478AD0 /* Ranking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
-		C2F373F621200F8000478AD0 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		C2F373FE212057C900478AD0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		C2F373FF212057C900478AD0 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		C2F37406212057E200478AD0 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
-		C2F37407212057E200478AD0 /* RankingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingViewController.xib; sourceTree = "<group>"; };
 		C2F3741021242F6A00478AD0 /* BackGround.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackGround.xib; sourceTree = "<group>"; };
 		C2F3741221242F9600478AD0 /* BackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGround.swift; sourceTree = "<group>"; };
 		D8E3E6FF42D863E348CFDF18 /* Pods-TapTap-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapTap-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TapTap-iOS/Pods-TapTap-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				C2F373C221200CC300478AD0 /* LaunchScreen.storyboard */,
-				C2F373BD21200CC200478AD0 /* Title.storyboard */,
 				C2F373EB21200E7200478AD0 /* Game.storyboard */,
 				C2F373EF21200E9100478AD0 /* Ranking.storyboard */,
 			);
@@ -217,28 +208,17 @@
 		C2F373E821200DF800478AD0 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				C2F37414212430F800478AD0 /* Button */,
 				C2F3740F21242F0E00478AD0 /* BackGround */,
-				C2F373F121200ECD00478AD0 /* Title */,
 				C2F373F321200EE600478AD0 /* Game */,
 				C2F373F521200EF800478AD0 /* Ranking */,
 			);
 			path = views;
 			sourceTree = "<group>";
 		};
-		C2F373F121200ECD00478AD0 /* Title */ = {
-			isa = PBXGroup;
-			children = (
-				C2F373F621200F8000478AD0 /* TitleViewController.swift */,
-			);
-			path = Title;
-			sourceTree = "<group>";
-		};
 		C2F373F321200EE600478AD0 /* Game */ = {
 			isa = PBXGroup;
 			children = (
 				C2F373FE212057C900478AD0 /* GameViewController.swift */,
-				C2F373FF212057C900478AD0 /* GameViewController.xib */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -247,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				C2F37406212057E200478AD0 /* RankingViewController.swift */,
-				C2F37407212057E200478AD0 /* RankingViewController.xib */,
 				C262FFB0215614A50022EFB6 /* RankingTableViewCell.swift */,
 			);
 			path = Ranking;
@@ -260,13 +239,6 @@
 				C2F3741021242F6A00478AD0 /* BackGround.xib */,
 			);
 			path = BackGround;
-			sourceTree = "<group>";
-		};
-		C2F37414212430F800478AD0 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Button;
 			sourceTree = "<group>";
 		};
 		CE6CEFD490A9B110F3EE7131 /* Pods */ = {
@@ -391,16 +363,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F373C421200CC300478AD0 /* LaunchScreen.storyboard in Resources */,
-				C2F37401212057C900478AD0 /* GameViewController.xib in Resources */,
 				C2F373C121200CC300478AD0 /* Assets.xcassets in Resources */,
 				C262FFB52168109D0022EFB6 /* btnSound.mp3 in Resources */,
 				C262FFB3216810930022EFB6 /* bad.mp3 in Resources */,
 				C262FFB92169F6C80022EFB6 /* GoogleService-Info.plist in Resources */,
 				C262FFB7216810A40022EFB6 /* good.mp3 in Resources */,
-				C2F37409212057E200478AD0 /* RankingViewController.xib in Resources */,
 				C2F373F021200E9100478AD0 /* Ranking.storyboard in Resources */,
 				C2F373EC21200E7200478AD0 /* Game.storyboard in Resources */,
-				C2F373BF21200CC200478AD0 /* Title.storyboard in Resources */,
 				C2F3741121242F6A00478AD0 /* BackGround.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +480,6 @@
 				C232DB74212CC24500A52D8F /* model.swift in Sources */,
 				C2F373BA21200CC200478AD0 /* AppDelegate.swift in Sources */,
 				C2F3741321242F9600478AD0 /* BackGround.swift in Sources */,
-				C2F373F821200F8000478AD0 /* TitleViewController.swift in Sources */,
 				C2F37408212057E200478AD0 /* RankingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,14 +516,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C2F373BD21200CC200478AD0 /* Title.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2F373BE21200CC200478AD0 /* Base */,
-			);
-			name = Title.storyboard;
-			sourceTree = "<group>";
-		};
 		C2F373C221200CC300478AD0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
